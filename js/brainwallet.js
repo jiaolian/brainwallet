@@ -997,7 +997,7 @@
     function txGetUnspent() {
         var addr = $('#txAddr').val();
 
-        var url = (txType == 'txBCI') ? 'https://blockchain.info/unspent?cors=true&address=' + addr :
+        var url = (txType == 'txBCI') ? 'https://blockchain.info/unspent?cors=true&active=' + addr :
             'https://blockexplorer.com/q/mytransactions/' + addr;
 
         url = prompt('Press OK to download transaction history:', url);
